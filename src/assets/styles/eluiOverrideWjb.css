@@ -1,0 +1,356 @@
+/*个例重写*/
+
+/*指标库管理-指标明细表，表格行高改为30px*/
+.index-detail-wrap .el-table th, .index-detail-wrap .el-table td {
+  height: 30px;
+}
+/*指标库管理-指标明细表，最后一行去除下边框*/
+.index-detail-wrap .el-table__body-wrapper tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/*指标库管理-指标明细表，内容高度宽度固定，超出隐藏，鼠标悬浮时显示*/
+.index-detail-wrap .el-table th>.cell, .index-detail-wrap .el-table td>.cell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.index-detail-wrap .el-table th>.cell:hover, .index-detail-wrap .el-table td>.cell:hover {
+  overflow: visible;
+}
+
+/*指标库管理-新增指标库-新增SAP指标库，输入表格内的输入框去除边框*/
+.addindex-sap-input-table input {
+  border: none!important;
+}
+
+/*菜单管理-目录管理，鼠标放到一行上时，操作按钮显示出来*/
+.tree-dynamic-operator .tree-row-btns {
+  display: none;
+}
+.tree-dynamic-operator .el-tree-node__content:hover>.tree-row .tree-row-btns, .catalog-mng .el-tree-node__children:hover>.tree-row .tree-row-btns {
+  display: block;
+}
+.tree-dynamic-operator .el-button--mini {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.tree-dynamic-operator .el-tree-node__expand-icon {
+  font-family: "iconmenu" !important;
+}
+.tree-dynamic-operator .el-icon-caret-right:before {
+  content: "\e617";
+}
+.tree-dynamic-operator .el-tree-node__expand-icon.expanded {
+  transform: none;
+  -webkit-transform: none;
+}
+.tree-dynamic-operator .el-icon-caret-right.expanded:before {
+  content: "\e68d";
+}
+.tree-dynamic-operator .el-tree-node__expand-icon.el-tree-node__expand-icon.is-leaf {
+  color: #c0c4cc;
+}
+.tree-dynamic-operator .el-tree-node__expand-icon.el-tree-node__expand-icon.is-leaf:before {
+  content: "\e643";
+}
+.tag-tree-container.tree-dynamic-operator .el-icon-caret-right:before {
+  content: "\e60b" !important;
+  color: #D81E06;
+}
+.tag-tree-container.tree-dynamic-operator .el-tree-node__children .el-icon-caret-right:before {
+  content: "\e60b";
+  color: #99DF21;
+}
+
+/*动态操作栏表格，鼠标放到一行上时，操作按钮显示出来*/
+.table-dynamic-operator .el-table__row .el-button {
+  display: none;
+}
+.table-dynamic-operator .el-table__row:hover .el-button {
+  display: inline-block;
+}
+
+/*登录页，登录表单，图标样式*/
+.login-form .el-input__icon+.el-input__inner {
+  padding-left: 35px;
+  padding-right: 3px;
+}
+.login-form .form-item i:before {
+  content: none;
+}
+.login-form .form-item i {
+  background-repeat: no-repeat;
+  background-position: center center;
+  left: 0;
+  right: auto;
+}
+.login-form .form-item.username i {
+  background-image: url(/static/images/login_user.png);
+}
+.login-form .form-item.password i {
+  background-image: url(/static/images/login_password.png);
+}
+
+/*用户管理页，部门职务，三个小栏高100%的又边框*/
+/*权限管理，职务权限，2个小栏高100%的又边框*/
+/*权限管理，用户权限，2个小栏高100%的又边框*/
+.tabs-full-height {
+  height: 100%;
+  position: relative;
+  padding-top: 57px;
+  box-sizing: border-box;
+}
+.tabs-full-height>.el-tabs__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.tabs-full-height>.el-tabs__content {
+  height: 100%;
+}
+.tab-full-height, .tab-full-height .tab-content-full-height, .tab-full-height .tab-content-full-height>.el-row,  .tab-full-height .tab-content-full-height>.el-row>.el-col {
+  height: 100%;
+}
+
+/*系统管理，权限管理，部门职务，角色高度为100%-50px*/
+.tab-full-height .tab-content-full-height.role-auth>.el-row.top-content, .tab-full-height .tab-content-full-height.depart-auth>.el-row.top-content {
+  height: calc(100% - 55px);
+}
+.tab-full-height .tab-content-full-height.role-auth>.el-row.bottom-bar, .tab-full-height .tab-content-full-height.depart-auth>.el-row.bottom-bar {
+  height: 55px;
+  margin-top: 10px;
+  text-align: right;
+}
+/*系统管理，权限管理，角色表格横向防止出现滚动条*/
+.role-auth .role-table .el-table__body-wrapper {
+  overflow-x: hidden;
+}
+/*修复系统管理，权限管理，右侧tab初始化时选中项下侧无横条的BUG*/
+.role-auth .el-tabs__active-bar {
+  width: 88px !important;
+}
+/*系统管理，权限管理，菜单配置和平台配置的树容器高100%，超出滚动*/
+.auth-tabs {
+  height: 100%;
+}
+.auth-tabs .el-tabs__content {
+  height: calc(100% - 57px);
+}
+.auth-tabs .el-tabs__content .el-tab-pane {
+  height: 100%;
+}
+.auth-tabs .el-tabs__content .el-tab-pane .tree-auth {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+/*用户管理页面，用户管理部门职务/角色列 改为可换行左对齐*/
+.user-mng .el-button {
+  white-space: normal;
+  text-align: left;
+}
+/*用户管理页，部门职务，职位管理和用户管理的表格的表头隐藏*/
+.depart-mng .table-container .el-table__header-wrapper {
+  display: none;
+}
+
+/*左侧导航栏，二级菜单打开的三角箭头增大到50px，便于点击*/
+.nav-menu .el-submenu__icon-arrow.el-icon-arrow-down {
+  height: 50px;
+  width: 50px;
+  margin-top: -25px;
+  margin-right: -25px;
+  text-align: center;
+  line-height: 50px;
+}
+
+/*框架tab页切换方式*/
+.app-frame-tabs {
+  height: 100%;
+}
+.app-frame-tabs>.el-tabs__header {
+  margin-bottom: 0;
+}
+.app-frame-tabs>.el-tabs__content {
+  height: calc(100% - 42px);
+}
+.app-frame-tabs>.el-tabs__content>.el-tab-pane {
+  height: 100%;
+}
+.app-frame-tabs>.el-tabs__content>.el-tab-pane>.content-wrap {
+  height: 100%;
+}
+
+/*表格设置面板，字段列表，行高改为30px*/
+.basic-table-dialog .columns-table .el-table th,.basic-table-dialog .columns-table .el-table td {
+  height: 30px;
+}
+
+.base-table-set-board .sp-replacer {
+  width: 100%;
+  text-align: center;
+}
+.base-table-set-board .sp-preview {
+  display: inline-block;
+  position: static;
+  width: 100%!important;
+  height: 100%;
+}
+
+/*表格组件斑马纹时颜色使用行计算出来的带50%透明度的颜色，需要把原来的#FAFAFA的默认的背景色去除*/
+.basic-table-dialog .el-table--striped .el-table__body tr.el-table__row--striped td, .tab-charts .el-table--striped .el-table__body tr.el-table__row--striped td{
+   background: none;
+}
+/*单选的表格，隐藏头部选择所有的选择框*/
+.table-single-select thead label.el-checkbox {
+  display: none;
+}
+
+.el-input.is-disabled .el-input__inner {
+  background-color: #fff;
+}
+/*查看状态，字体黑色，没有前面的红点*/
+.read-mode .el-input.is-disabled .el-input__inner {
+  background-color: #fff;
+  border-color: #e4e7ed;
+  color: #606266;
+}
+
+.read-mode .el-form-item.is-required .el-form-item__label:before {
+  display: none;
+}
+
+/*运维人员管理*/
+.actived-breadcrumb-item .el-breadcrumb__inner {
+  font-weight: 700;
+  /*color: #303133;*/
+  color: #409EFF;
+}
+.actived-breadcrumb-item .el-breadcrumb__inner:hover {
+  cursor: pointer;
+  color: #409EFF;
+}
+.operate-detail .el-dialog__header {
+  border-bottom: none;
+}
+.operate-detail .el-dialog__body {
+  padding: 10px 20px;
+}
+.operate-detail .el-table__column-filter-trigger {
+  line-height: 23px;
+}
+
+/*幸福千万家角色管理*/
+.role-edit .tab-wrap .el-tabs__content {
+  height: calc(100% - 55px);
+}
+.role-brief .tabs-wrap .el-tabs {
+  height: 99%;
+}
+.role-brief .tabs-wrap .el-tabs__content {
+  height: calc(100% - 70px);
+  overflow-y: scroll;
+}
+.role-menu-wrap .el-tree__empty-text {
+  font-size: 14px;
+  color: #909399;
+}
+
+/*幸福千万家促进方案管理编辑*/
+.promote-report-typein-wrap .index-table .cell {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.75;
+}
+.promote-report-typein-wrap .index-table thead th, .promote-report-typein-wrap .index-table tbody .is-left {
+  background: #FAFAFA;
+  font-weight: bold;
+}
+.promote-report-typein-wrap .index-table thead .cell {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background: transparent;
+}
+.promote-report-typein-wrap .index-table tbody .cell {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+/*.promote-report-typein-wrap .index-table tbody .cell span {*/
+  /*display: inline-block;*/
+  /*margin-bottom: 8px;*/
+/*}*/
+.promote-report-typein-wrap .index-table tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+.promote-report-typein-wrap .editable-label .editing .el-input__inner {
+  /*height: 35px;*/
+  height: 37px;
+  /*line-height: 35px;*/
+  line-height: 37px;
+  padding: 0 8px;
+  font-size: 14px;
+}
+.promote-report-typein-wrap .el-textarea__inner {
+  border-radius: 2px;
+}
+.promote-report-typein-wrap .review-item {
+  height: 18px;
+  line-height: 18px;
+  margin-bottom: 16px;
+  vertical-align: top;
+}
+.promote-report-typein-wrap .review-item .el-date-editor.el-input {
+  /*width: 112px;*/
+  width: 120px;
+  cursor: pointer;
+}
+.promote-report-typein-wrap .review-item .el-date-editor.el-input .el-input__inner {
+  border: none;
+  height: 18px;
+  line-height: 18px;
+  padding-left: 8px;
+  color: #FC9E3F;
+}
+.promote-report-typein-wrap .review-item .el-date-editor.el-input .el-input__inner::-webkit-input-placeholder {
+  color: #FC9E3F;
+}
+.promote-report-typein-wrap .review-item .el-input__prefix {
+  right: 12px;
+  display: block;
+  width: 18px;
+  left: auto;
+  color: #515152;
+  top: 0;
+}
+.promote-report-typein-wrap .edit-block .review-item .el-input__icon {
+  height: 18px;
+  line-height: 18px;
+}
+.promote-report-typein-wrap .review-item .el-input__suffix {
+  display: none;
+}
+.promote-report-typein-wrap .review-item .el-button--text {
+  font-size: 12px;
+  height: 18px;
+  line-height: 18px;
+  padding: 0;
+  border: none;
+}
+.tip-popper-from-title {
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  max-width: 618px;
+  box-sizing: border-box;
+  padding: 8px 8px;
+  letter-spacing: 1px;
+}
+

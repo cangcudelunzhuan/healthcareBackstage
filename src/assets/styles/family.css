@@ -1,0 +1,277 @@
+@charset "utf-8";
+html{
+  font-size: 62.5%
+}
+@import "//at.alicdn.com/t/font_756337_lhg19ok06pk.css";
+@font-face {
+  font-family: 'iconfont';  /* project id 756337 */
+  src: url('//at.alicdn.com/t/font_756337_fde5lgru9gh.eot');
+  src: url('//at.alicdn.com/t/font_756337_fde5lgru9gh.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_756337_fde5lgru9gh.woff') format('woff'),
+  url('//at.alicdn.com/t/font_756337_fde5lgru9gh.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_756337_fde5lgru9gh.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:1.6rem;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.text-right{
+  text-align: right;
+}
+.redfont{
+  color: #fc353c
+}
+.importBox{
+  margin-left: 2rem;
+  position: relative;
+}
+.importbutton{
+  display: flex;
+  align-items: center;
+  color: #000;
+  height: 3rem;
+  font-size: 1.2rem;
+}
+.importbutton .iconfont{
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+  color: #515152
+}
+.importBox .el-button, .importBox .el-button:focus, .el-button:hover{
+  background-color: transparent
+}
+.el-button{
+  color: #515152
+}
+.table-wrap .el-table th > .cell.highlight,
+.el-button--text:focus, .el-button--text:hover,
+.el-button--text, .el-checkbox__input.is-checked + .el-checkbox__label, .el-table-filter__bottom button:hover{
+    color: #03BFEE
+}
+.el-button:focus, .el-button:hover ,
+.el-button:focus .iconfont, .el-button:hover .iconfont
+{
+    color: #03BFEE;
+    border-color: #03BFEE;
+    background-color: #15DCC800;
+}
+.el-button--primary:focus, .el-button--primary:hover{
+  background: #1DE9B6;
+  background-image: linear-gradient(45deg, #1DE9B6 0%, #03BFEE 50%);
+  border-color: #03BFEE;
+  color: #fff;
+}
+.greenBack{
+  background-image: linear-gradient(42deg, #1DE9B6 0%, #03BFEE 98%);
+  box-shadow: 0 10px 20px 0 rgba(173, 243, 236, 0.45);
+  -webkit-box-shadow: 0 10px 20px 0 rgba(173, 243, 236, 0.45);
+  -moz-box-shadow: 0 10px 20px 0 rgba(173, 243, 236, 0.45);
+  border: 0px;
+  color: #fff
+}
+.greenBack, .greenBack:hover, .greenBack:focus{
+  border-color: #fff
+}
+.el-input__inner:hover, .el-input__inner:focus, .el-checkbox__inner:hover,
+.el-checkbox__input.is-focus .el-checkbox__inner, .el-select .el-input.is-focus .el-input__inner,
+.el-pagination__sizes .el-input .el-input__inner:hover, .el-select .el-input__inner:focus{
+  border-color: #03BFEE;
+}
+.el-input--small .el-input__inner{
+  line-height: 3rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  padding: 0 0.8rem
+}
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+  background-color: #1DE9B6;
+  background-image: linear-gradient(45deg, #1DE9B6 0%, #03BFEE 50%);
+  border-color: #fff;
+}
+.el-loading-spinner .path{
+  stroke: #03BFEE
+}
+.el-loading-spinner .el-loading-text{
+  color: #03BFEE
+}
+.el-checkbox__inner::after{
+  left: 0.5rem;
+  top: 0.2rem;
+}
+.el-checkbox__inner{
+  height: 1.6rem;
+  width: 1.6rem
+}
+.el-message-box{
+  border-radius: 0px
+}
+.importbutton{
+  display: flex;
+  align-items: center;
+}
+
+.innerBox{
+  display: flex;
+  align-items: flex-start;
+}
+.innerBox .iconfont{
+  font-size: 2.4rem;
+  color: #FC9630
+}
+.innerBox .innerBoxRight{
+  margin-left: 1.6rem;
+  font-size: 1.4rem
+}
+.innerBox .innerBoxRight .title{
+  font-size: 1.4rem;
+  color: #262626
+}
+.innerBox .innerBoxRight .msg{
+  color: #595959;
+  font-size: 1.2rem;
+  margin-top: 1rem
+}
+.hasNoTitle{
+  padding: 0
+}
+.hasNoTitle .el-message-box__header{
+  display: none;
+}
+.hasNoTitle .el-message-box__btns{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.hasNoTitle.center .el-message-box__btns{
+  justify-content: center;
+}
+.hasNoTitle .el-message-box__btns .el-button + .el-button{
+  margin-right: 1rem
+}
+.hasNoTitle .el-message-box__btns .el-button{
+  padding: 0.9rem 2.55rem;
+  font-size: 1.4rem;
+}
+.hasNoTitle .el-message-box__btns .el-button--primary{
+  background: #ffeced;
+  color: #fc353c;
+  border: 1px solid #ffdadb;
+
+}
+.el-message-box.hasNoTitle .el-message-box__content, .el-message-box.hasNoTitle .el-message-box__btns{
+  padding: 0
+}
+.el-message-box.hasNoTitle .el-message-box__btns{
+  margin-top: 4rem
+}
+.el-message-box.hasNoTitle{
+  padding: 4rem;
+  width: 31.6rem
+}
+.el-tabs--card > .el-tabs__header .el-tabs__item .el-icon-close:before {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+.el-pagination.is-background .el-pager li:not(.disabled):hover, .el-select-dropdown__item.selected{
+  color: #03BFEE
+}
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .el-pager li{
+  background-color: #fff;
+  border: 1px solid #ebebeb
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active,
+.el-pagination.is-background .el-pager li:not(.disabled).active:hover{
+  background-image: linear-gradient(45deg, #1DE9B6 0%, #03BFEE 50%);
+  border: 1px;
+  margin: 0 0.6rem;
+  color: #fff
+}
+.table-wrap .el-table td{
+  padding: 0.6rem 0
+}
+.table-wrap .el-table th{
+  padding: 0.3rem 0;
+}
+.table-wrap .el-table td .cell, .table-wrap .el-table th .cell{
+  font-size: 1.2rem;
+  color: #000
+}
+.el-alert--success{
+  background: #fff;
+  color: #515152
+}
+.el-icon-success::before{
+  color: #00cc43;
+  font-family:"iconfont" !important;
+  content: "\e6d3";
+}
+
+.cell .el-icon-arrow-down::before{
+  font-family:"iconfont" !important;
+  content: "\e6da";
+  font-size: 1.6rem;
+  margin-left: 0.2rem;
+  position: relative;
+  top: 0.2rem
+}
+.el-checkbox__label{
+  font-weight:normal;
+  color: #515152;
+  font-size: 1.2rem
+}
+.el-table-filter__bottom button{
+  font-size: 1.2rem
+}
+.cell.highlight .el-icon-arrow-down::before{
+  color: #03BFEE
+}
+.cell .el-button>span{
+  font-size: 1.2rem;
+  padding: 0 0.1rem;
+  line-height: 1.5;
+}
+.el-menu-item, .el-submenu__title{
+  height: 4rem;
+  line-height: 4rem
+}
+.nav-menu .el-menu-item{
+  display: flex;
+  align-items: center;
+}
+.nav-menu .el-menu-item .iconfont{
+  font-size: 1.4rem;
+  margin-right: 0.5rem
+}
+.icon-wenjianjiaIcon:before { content: "\e6de"; }
+.fixedbottom{
+  position: fixed;
+  bottom: 0rem;
+  background: #fff;
+  padding: 2.4rem 0rem 4rem 0;
+}
+.app-frame-tabs > .el-tabs__header{
+  margin-left: 1rem
+}
+.el-pagination__sizes .el-input .el-input__inner, .el-pager li{
+  font-size: 1.2rem;
+  color: #000
+}
+.el-pagination button, .el-pager li{
+  height: 3rem;
+  line-height: 3rem
+}
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .el-pager li{
+  color: #000
+}
+.el-table__empty-block {
+  width: 100% !important;
+}
+.el-scrollbar__wrap {
+  overflow-x: hidden;
+}

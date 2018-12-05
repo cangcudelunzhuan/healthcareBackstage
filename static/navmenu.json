@@ -1,0 +1,54 @@
+{
+  "code": "success",
+  "data": [
+    {
+      "path": "/App/system/hospitalManage",
+      "displayOrdinal": 0,
+      "pid": "",
+      "id": "JGGL",
+      "title": "机构管理",
+      "nodeId": "JGGL",
+      "hasLeaf": false,
+      "iconClass": "iconfont icon-wenjianjiaIcon",
+      "parentId": "",
+      "createDateTime": 1535338963000
+    },
+    {
+      "path": "/App/system/reportPositiveStore",
+      "displayOrdinal": 2,
+      "pid": "",
+      "id": "ZBJDGL",
+      "title": "指标解读管理",
+      "nodeId": "ZBJDGL",
+      "hasLeaf": false,
+      "iconClass": "iconfont icon-wenjianjiaIcon",
+      "parentId": "",
+      "createDateTime": 1535338720000
+    },
+    {
+      "path": "/App/system/reportManagerindex",
+      "displayOrdinal": 3,
+      "pid": "",
+      "id": "BAOGAOGUANLI",
+      "title": "报告管理",
+      "nodeId": "BAOGAOGUANLI",
+      "hasLeaf": false,
+      "iconClass": "iconfont icon-wenjianjiaIcon",
+      "parentId": "",
+      "createDateTime": 1534388989000
+    },
+    {
+      "path": "/App/system/promoteManagerindex",
+      "displayOrdinal": 4,
+      "pid": "",
+      "id": "PROMOTEGUANLI",
+      "title": "促进方案管理",
+      "nodeId": "PROMOTEGUANLI",
+      "hasLeaf": false,
+      "iconClass": "iconfont icon-wenjianjiaIcon",
+      "parentId": "",
+      "createDateTime": 1534388989000
+    }
+  ],
+  "message": "API调用成功"
+}

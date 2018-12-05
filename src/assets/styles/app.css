@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+/*滚动条样式*/
+body ::-webkit-scrollbar {
+  height: 10px;
+  width: 8px
+}
+body ::-webkit-scrollbar-track {
+  background: 0 0;
+}
+body ::-webkit-scrollbar-thumb:hover {
+  background-color: #666;
+}
+body ::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+body ::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #ddd;
+}
+/*路由内容区公用样式*/
+.content-wrap {
+  background: #fff;
+	padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+.route-view-area {
+  height: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  /*overflow-y: auto;*/
+  overflow-y: scroll
+}
+.breadcrumb-bi {
+  margin-top: 10px;
+  font-size: 14px;
+}

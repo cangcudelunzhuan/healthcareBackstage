@@ -1,0 +1,26 @@
+.operationRecordlist .recordTablelist .el-table__row .el-button {
+  padding: 0;
+}
+.operationRecordlist .recordTablelist .el-table th>.cell {
+  height: 40px;
+  line-height: 40px;
+}
+.operationRecordlist .recordTablelist .el-table__row .cell {
+  height: 18px;
+  line-height: 18px;
+}
+.operationRecordlist .recordTablelist .el-table__row .cell .el-button {
+  border: none;
+  color: #000000;
+  opacity: 0.75;
+}
+.operationRecordlist .recordTablelist .el-table__row .cell .el-button:hover {
+  color: #03BFEE;
+}
+.checkMemberList .el-button {
+  padding: 0;
+}
+.el-scrollbar {
+  padding-bottom: 10px;
+}
+

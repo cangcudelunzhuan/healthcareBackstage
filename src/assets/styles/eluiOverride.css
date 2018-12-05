@@ -1,0 +1,152 @@
+/*通用重写*/
+
+/*---分页样式重写---begin*/
+
+/*分页去除内边距*/
+.el-pagination {
+  padding: 0;
+}
+/*分页总条数去除做外边距*/
+.el-pagination__total {
+  margin-left: 0;
+}
+
+/*---分页样式重写---end*/
+
+
+/*---表格样式重写---begin*/
+
+/*表格去除左边距和右边距*/
+.border-side-none.el-table--fit {
+  border-left: none;
+}
+.border-side-none.el-table::after, .border-side-none.el-table::before {
+  content: none;
+}
+.border-side-none .el-button {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/*表格表头颜色改为白色*/
+.el-table__footer-wrapper thead div, .el-table__header-wrapper thead div, .el-table th {
+  background-color: #ffffff;
+}
+
+/*---表格样式重写---end*/
+
+.tabs-dialog .el-dialog__header button {
+  display: none;
+}
+.tabs-dialog .el-dialog__body {
+  padding: 0 20px 30px;
+}
+.tabs-dialog .el-dialog__header {
+  border-bottom: none;
+}
+
+/**tabs切换样式重写**/
+.el-tabs__item {
+  height: 36px;
+  line-height: 36px;
+}
+.el-tabs--card>.el-tabs__header {
+  border-bottom: none;
+  margin-top: -36px;
+  background: transparent;
+  width: 70%;
+}
+.el-tabs--card>.el-tabs__header .el-tabs__item {
+  border: none;
+  background: #EBEBEB;
+  height: 36px;
+  margin: 0 11px;
+}
+.el-tabs--card>.el-tabs__header .el-tabs__item:before{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 36px;
+    position: absolute;
+    transform: skewX(-15deg);
+    background: #EBEBEB;
+    border-top-left-radius: 8px;
+    left: -8px;
+    top: 0;
+}
+.el-tabs--card>.el-tabs__header .el-tabs__item:after{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 36px;
+    position: absolute;
+    transform: skewX(15deg);
+    background: #EBEBEB;
+    border-top-right-radius: 8px;
+    right: -8px;
+    top: 0;
+}
+.el-tabs--card>.el-tabs__header .el-tabs__nav {
+  border: none
+}
+.el-tabs__nav-next,.el-tabs__nav-prev {
+  width: 16px;
+  line-height: 33px;
+  background: #FAFAFA;
+  border: 1px solid #D9D9D9;
+  border-radius: 0 2px 2px 0;
+  text-align: center;
+}
+.el-tabs--card>.el-tabs__header .el-tabs__item.is-active {
+  background: #fff;
+  color: #03BFEE;
+  z-index: 9999999;
+}
+.el-tabs--card>.el-tabs__header .el-tabs__item.is-active:before{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 36px;
+    position: absolute;
+    transform: skewX(-15deg);
+    background: #fff;
+    border-top-left-radius: 8px;
+    left: -8px;
+    top: 0;
+}
+.el-tabs--card>.el-tabs__header .el-tabs__item.is-active:after{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 36px;
+    position: absolute;
+    transform: skewX(15deg);
+    background: #fff;
+    border-top-right-radius: 8px;
+    right: -8px;
+    top: 0;
+}
+.el-tabs--card>.el-tabs__header .el-tabs__item.is-active.is-closable {
+  padding: 0 10px;
+}
+
+/**菜单样式重写**/
+.nav-col .el-menu {
+  background: #f5f5f5!important;
+  border-right: none
+}
+/**导航样式重写**/
+.nav-menu .el-menu-item:focus, .nav-menu .el-menu-item:hover, .nav-menu .el-menu-item.is-active {
+  background: -webkit-linear-gradient(right, #1DE9B6, #03BFEE); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(left, #1DE9B6, #03BFEE); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(left, #1DE9B6, #03BFEE); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to left, #1DE9B6, #03BFEE); /* 标准的语法（必须放在最后） */
+  color: #fff;
+}
+.nav-menu .el-submenu__title {
+  padding: 0!important;
+  height: 50px;
+  line-height: 50px;
+}
+.nav-menu .el-submenu__title>li {
+  padding-left: 20px!important;
+}
